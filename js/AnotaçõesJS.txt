@@ -1,0 +1,148 @@
+regras para Variaveis
+    Variaveis em JavaScript começam com a palavra var ou let! EX: var nome = 'Felipe'
+    Os identificares podem começar com Letra, $ ou _
+    Não pode usar numeros no começo 
+    pode usar letra e numeros
+    pode ter acentos
+    nao pode usar espaço
+    nao pode usar palavras reservadas. alert, function, prompt
+
+Dicas de variaveis
+    maiuscula ou minuscula tem diferencia
+    escolher nomes coerentes
+    evite se tornar um programador alfabeto e contator
+
+Tipo number para numeros (9.6 ou 9)
+    infinity
+    NaN
+Tipo String "felipe" 'felipe' `felipe`
+Tipo Boleado True ou False    
+null
+undersined
+object
+    array
+function
+
+typeof = comando para ver se a variavel é Tipo string
+
+conversão de numeros
+    Number.parseInt()
+    Number.parseFloat()
+    ou usar simplesmeste o 
+        Number()
+
+Converter para string
+    String()
+    var.toString()
+
+formatando String
+    `usar crase 
+    `Eu estou aprendendo ${variavel})`
+
+    var.length // mostra quantos caracteres tem uma string
+    var.toUpperCase() // Deixa tudo maiusculo
+    var.toLowerCase() //Deixa tudo minuscula
+
+formatar numeros
+    var.toFixed(quantidade,Ex 2) // para colocar duas casas decimais
+    var.toFixed(2).replace('.',',') // subistitui o ponto (.) pela virgula (,)    
+    var.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) // converter para real usando variavel de toLocaleString
+        n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+
+
+Operadores
+    Aritmeticos
+    Atribuição
+    relacionais
+    Logicos
+    Ternarios
+
+Aritmeticos
+    + soma
+    - subtrai
+    * multiplica
+    / divide
+    % resto da divisao
+    ** potencia
+
+    Precedencia de Operadores (preferencial)
+    usar parenteses para forçar 
+
+    seguir a ordem abaixo
+    1    () - parenteses 
+    2    ** - potencia
+    3    * / % - multiplicacao, divisao e resto da divisao
+    4    + - Soma e subtrai
+
+        n += 1 Auto Atribuição simplificado
+
+    incremento
+        x = x + 1
+        x += 1
+        x++
+
+Operadores parte 2
+    relacionais
+        > maior q
+        < menor q
+        >= maior igual
+        <= menor igual
+        == igual
+        != diferente
+            5 == 5 True
+            5 == '5' True
+            5 === '5' False // diferente de identico (valor e tipo)
+
+    Logicos
+        ! negação == N 
+        && conjunção  E
+        || disjunção OU
+        primeiro N depois E depois o OU
+                Precedencia 
+                    a > b && b % 2 == 0
+                    1º b % 2
+                    2º a > b ... 2 == 0
+                    3º  &&
+    Ternarios
+        teste ? true : false
+        var m = 8
+        m >= 7 ? 'Aprovado' : 'Reprovado'
+        Aprovado
+aprendendo o que é DOM
+
+document object model = DOM
+Arvore DOM
+Manipular DOM
+
+Ctrl Shift P WatchChrome
+
+O que é DOM?  document object model
+Arvore dom 
+    window // Raiz
+    location (diz a locatição do site) - document(doc atual) - history(se onde veio para onde vai)
+        document tem html dentro que tem o head e o body
+
+        selecionando elementos
+            por Marca - por tag
+                getElementsByTagName()
+            por id - 
+                getElementById()
+            por Nome - 
+                getElementsByName()
+            por Classe - 
+                getElementsByClassName()
+            por Seletor - css
+                querySelector()
+                querySelectorAllr() 
+
+
+Eventos DOM 
+    Eventos de Mouse em DIVs
+        mouseenter
+        mousemove
+        mousedown
+        mouseup
+        click
+        mouseout
+
+        // ip wagner: 172.16.102.57//

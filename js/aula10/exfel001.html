@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adivinhação</title>
+    <style>
+        div#campo{
+            background-color: #24dead;
+            width: 500px;
+            height: 500px;
+        }
+        div#nome1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            float: ;
+        }
+        div#nome2{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            
+            float: ;
+        }
+        div#res{
+            background-color: chocolate;
+            width: 100px;
+            height: 100px;
+            margin-top: 30px;    
+        }
+    </style>
+</head>
+
+<body>
+    <div id="campo">
+        <div id="nome1"><input type="text" id="n1"></div>
+        <div id="nome2"><input type="text" id="n2"></div>
+        <div id="res">res</div>
+        <input type="button" value="Juntar" id='juntar'>
+    </div>
+
+
+    <script>
+        var nome1 = document.getElementById('n1')
+        var nome2 = document.getElementById('n2')
+        var n1 = (nome1.value)
+        var n2 = (nome2.value)
+        var res = document.getElementById('res')
+        var botao = document.getElementById('juntar')
+        
+        botao.addEventListener('click', clicar)
+        
+        function clicar(){
+            res.innerText = `${n1} Love ${n2}`
+            document.write(`${n1}${n2}`)
+            document.write(`${nome1}${nome2}`)
+        }
+    </script>
+</body>
+</html>
+
+// Errado

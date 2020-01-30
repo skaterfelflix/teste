@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste</title>
+    <style>
+       body{
+           background-color: rgb(124, 201, 121);
+           color: white;
+       } 
+       p{
+           background-color: violet;
+           width: 200px;
+           font: normal 40pt Arial;
+       }
+    </style>
+</head>
+<body>
+Oi
+<p>Tudo bem</p>
+<input type="number" name="txtn3" id="txtn3">
+<input type="number" name="txtn4" id="txtn4">
+<input type="button" value="somar" onclick="somar()">
+<div id="res">Resultado</div>
+
+<br>
+<script>
+    function somar(){
+        var n3 = window.document.getElementById('txtn3')
+        var n4 = window.document.getElementById('txtn4')
+        var res = window.document.getElementById('res')
+        var n5 = Number(n3.value)
+        var n6 = Number(n4.value)
+        var s = n5 + n6 
+        res.innerHTML = s
+
+       
+    }
+     /*  var n1 = Number(prompt('digite um numero'))
+    var n2 = Number(prompt('digite um numero'))
+    var s = n1+n2
+    var m = n1*n2
+    var d = n1/n2
+    var sb = n1-n2
+    // alert(`Os numeros digitados foram ${n1} e ${n2}`)
+    // alert(`Soma ${s}, Multiplicação ${m}, Divisão ${d}, Subtração ${sb} `)
+    document.writeln(s, '<br>')
+    document.writeln(m, '<br>')
+    document.writeln(d, '<br>')
+    document.writeln(sb, '<br>')*/
+
+</script>
+</body>
+</html>
+
